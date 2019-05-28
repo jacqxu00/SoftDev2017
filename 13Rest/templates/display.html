@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brands at Walmart</title>
+  </head>
+  <body align="center">
+    <h1>Brand: {{info['brand']}}</h1><hr />
+	{% for each in info['items'] %}
+    	<h2>{{ each['name'] }}</h2>
+		<image src="{{ each['largeImage'] }}" width="30%"></image>
+		<p>Item ID: {{ each['itemId'] }}</p>
+		<p>Price: {{ each['salePrice'] }}</p>
+    	<p>Description: {{ each['longDescription'] }}</p>
+	{% endfor %}
+  </body>
+</html>

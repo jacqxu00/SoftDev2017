@@ -1,0 +1,28 @@
+body {
+	background-color: #C5C3C6;
+	border: 5px solid white;
+	color: #46494C;
+}
+
+h1,h2 {
+	text-align: center;
+	color: #4C2B68;
+	margin-top: 10px;
+	margin-left: 420px;
+	margin-down: 10px;
+	margin-right: 420px;
+	background: white;
+}
+
+h3 {
+	color: #AC9FBF;
+}
+
+a {
+	color: #AC9FBF;
+	text-decoration: none;
+}
+
+p {
+	color: #46494C;
+}

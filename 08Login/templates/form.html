@@ -1,0 +1,36 @@
+<!-- 
+Jackie Xu and William Soe
+SoftDev Pd9
+HW07 Login
+10.04.17
+-->
+
+<!-- form for login -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+  </head>
+  <body align="center">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <form method = "POST" action = "/login">
+	  <br><br>
+      <p>Username:</p>
+      <input type = "text" name = "username">
+      <br>
+	  <p>Password:</p>
+	  <input type = "password" name = "password">
+	  <br><br>
+      <input type = "submit" value = "Submit">
+    </form>
+  </body>
+</html>

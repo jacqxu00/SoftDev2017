@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Occupations </title>
+  </head>
+  <body>
+    <h2> Occupations in the US </h2>
+    <table border=1>
+      <tr>
+	<th>Occupations</th>
+	<th>Percentage</th>
+      </tr>
+      {% for row in var %}
+      <tr>
+	<td>{{row}}</td>
+	<td>{{var[row]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <h3> Random Occupation Selector </h3>
+    <p> Your chosen occupation is: </p>
+    <p> {{choice}} </p>
+  </body>
+</html>

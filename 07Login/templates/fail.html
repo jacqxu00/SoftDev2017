@@ -1,0 +1,24 @@
+<!-- 
+Jackie Xu and William Soe
+SoftDev Pd9
+HW07 Login
+10.04.17
+-->
+
+<!-- takes in username and password and determines which was wrong and tells user -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Failed!</title>
+  </head>
+  <body align="center">
+	<h2>Access was denied.</h2>
+  	{% if user != 'hello' %}
+  	<p>Username does not exist.</p>
+  	{% endif %}
+	{% if pw != 'pass' %}
+	<p>Password is incorrect.</p>
+	{% endif %}
+  </body>
+</html>

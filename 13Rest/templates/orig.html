@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASA Picture of the Day</title>
+  </head>
+  <body align="center">
+    <h1>NASA Picture of the Day</h1>
+    <h2>{{ info['title'] }}</h2>
+	<p>{{ info['date'] }}</p>
+    <image src="{{ info['hdurl'] }}" width="100%"></image>
+    <p>{{ info['explanation'] }}</p>
+    <p>Copyright &copy; {{ info['copyright'] }}</p>
+  </body>
+</html> 
